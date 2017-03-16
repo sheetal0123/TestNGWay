@@ -6,7 +6,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class HookableExample1Listeners implements ITestListener {
+public class ITestListener1 implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {

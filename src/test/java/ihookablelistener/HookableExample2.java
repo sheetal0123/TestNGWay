@@ -12,7 +12,8 @@ import org.testng.annotations.Test;
 import java.util.Iterator;
 
 /**
- * Same example just different style of writing 
+ * Same example just added all listeners in one class 
+ * Not a good way :(
  *
  */
 
@@ -86,8 +87,7 @@ public class HookableExample2 implements IHookable {
             while (iterator.hasNext()) {
                 ITestResult result = iterator.next();
                 if (Boolean.parseBoolean(result.getAttribute("disabled").toString())) {
-                	System.out.println("**********m in*****");
-                    iterator.remove();
+                	iterator.remove();
                 }
             }
         }

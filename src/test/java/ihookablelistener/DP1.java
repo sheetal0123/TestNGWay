@@ -14,9 +14,7 @@ public class DP1 {
 	 */
 	@DataProvider
 	public Object[][] getDp() {
-		return new Object[][] { { "clientA" }, { "dummy" }, { "clientB" } };
+		return new Object[][] { { "clientX" }, { "dummy" }, { "clientY" } };
 	}
-	
-	
 	
 }

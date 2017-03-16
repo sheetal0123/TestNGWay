@@ -16,26 +16,12 @@ import org.testng.annotations.Test;
  *	this will work only if we run test using maven command
  *	For this we given testng.xml path in pom and running using mvn clean install
  */
-public class HookableExample1 implements IHookable {
+public class HookableExample1 {
 
-	@Override
-	public void run(IHookCallBack callBack, ITestResult testResult) {
-		Object[] parms = callBack.getParameters();
-		if (parms[0].equals("dummy")) {
-			testResult.setAttribute("disabled", true);
-			throw new SkipException("skipping test");
-		} else {
-			callBack.runTestMethod(testResult);
-		}
-	}
-
-	
-
-	
 	
 	@Test(dataProvider = "getDp",dataProviderClass=DP1.class)
 	public void abc(String p) {
-		System.out.println("Data Values: " + p);
+		System.out.println("***************** Data Values: " + p);
 	}
 
 	

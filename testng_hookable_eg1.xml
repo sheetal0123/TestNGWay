@@ -4,7 +4,8 @@
 <suite name="Hookable Ex 1" parallel="false">
 
 	<listeners>
-		<listener class-name="ihookablelistener.HookableExample1Listeners" />
+		<listener class-name="ihookablelistener.ITestListener1" />
+		<listener class-name="ihookablelistener.IHookableListener1" />
 	</listeners>
 
 	<test name="Hookable Listeners">
