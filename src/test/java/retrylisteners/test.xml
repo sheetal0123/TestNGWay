@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<classes>
+			<class name="retrylisteners.TestClass" />
+		</classes>
+	</test>
 
-<suite name="Listeners Tests" parallel="false">
-    <test name="Sub-Tests">
-        <classes>
-        	<class name="listeners.TestClass"/>
-        </classes>
-    </test>
-    
-    
     <listeners>
-        <listener class-name="listeners.TestListener"/>
-        <listener class-name="listeners.RetryListener"/>
+        <listener class-name="retrylisteners.TestListener"/>
+        <listener class-name="retrylisteners.RetryListener"/>
   	</listeners>
-   
-</suite>
+</suite> 
